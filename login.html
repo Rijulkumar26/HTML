@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>HTML Login Page</title>
+</head>
+<body>
+
+<h1>HTML Login Page</h1>
+
+<label for="userid">User ID:</label>
+<input type="text" id="userid" name="userid">
+<br><br>
+<label for="pass">Password:</label>
+<input type="password" id="pass" name="password">
+<br><br>
+<button onclick="myFunction()">Submit</button>
+
+<script>
+var myInput_p = document.getElementById("pass");
+var myInput_u = document.getElementById("userid");
+
+function myFunction(){
+	var pass = "wipro@123";
+	var userid = "wipro@123";
+	if(myInput_p.value.match(pass) && myInput_u.value.match(userid)){
+		alert("Success");
+	}
+  	else{
+		alert("Failure");
+	}
+}
+</script>
+</body>
+</html>
